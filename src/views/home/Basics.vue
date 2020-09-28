@@ -17,19 +17,19 @@
               >
                 <el-menu-item index="1">
                   <div class="header_navigation">
-                    <img src="../assets/images/1_1.png" />
+                    <img src="../../assets/images/1_1.png" />
                     <span>工作台</span>
                   </div>
                 </el-menu-item>
                 <el-menu-item index="2">
                   <div class="header_navigation">
-                    <img src="../assets/images/1_2.png" />
+                    <img src="../../assets/images/1_2.png" />
                     <span>工作事宜</span>
                   </div>
                 </el-menu-item>
                 <el-menu-item index="3">
                   <div class="header_navigation">
-                    <img src="../assets/images/1_3.png" />
+                    <img src="../../assets/images/1_3.png" />
                     <span>文件柜</span>
                   </div>
                 </el-menu-item>
@@ -38,13 +38,13 @@
                 </el-menu-item>-->
                 <el-menu-item index="4">
                   <div class="header_navigation">
-                    <img src="../assets/images/1_4.png" />
+                    <img src="../../assets/images/1_4.png" />
                     <span>通讯录管理</span>
                   </div>
                 </el-menu-item>
                 <el-menu-item index="5">
                   <div class="header_navigation">
-                    <img src="../assets/images/1_5.png" />
+                    <img src="../../assets/images/1_5.png" />
                     <span>系统管理</span>
                   </div>
                 </el-menu-item>
@@ -81,6 +81,9 @@ export default {
     return {
       activeIndex: "0"
     };
+  },
+  created() {
+    console.log(this.$store.state.userInfo,'userInfo')
   },
   methods: {
     HomePage() {

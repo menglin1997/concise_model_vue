@@ -111,7 +111,8 @@ export default {
           console.log(this.loginForm);
           this.loading = false;
           console.log("登陆了");
-          window.localStorage.setItem("token", "aaatoken");
+          this.$store.commit('SET_USERINFO', '数据')
+          window.localStorage.setItem("token", "数据");
           // login({
           //   type: 0,
           //   uid: '1000708'
