@@ -1,0 +1,48 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: zml
+ * @Date: 2020-09-27 17:13:31
+ * @LastEditors: zml
+ * @LastEditTime: 2020-09-27 17:25:41
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div {
+        height: 6px;
+        background: linear-gradient(90deg, yellow, red);
+    }
+    h1 {
+        color: transparent;
+        text-shadow: 0 0 10px red; 
+    }
+    @supports (text-shadow: 0 0 .3em gray) { 
+ h1 {
+ color: transparent;
+ text-shadow: 0 0 .3em gray; 
+ }
+
+}
+.btn {
+    padding: .3em .8em;
+border: 1px solid rgba(0,0,0,.1);
+background: #58a linear-gradient(hsla(0,0%,100%,.2),
+ transparent);
+border-radius: .2em;
+box-shadow: 0 .05em .25em rgba(0,0,0,.5);
+color: white;
+text-shadow: 0 -.05em .05em rgba(0,0,0,.5);
+}
+</style>
+<body>
+    <h1>到一条从黄色到红色的垂直渐变色</h1>
+    <div></div>
+    <button class="btn">按钮</button>
+</body>
+</html>
